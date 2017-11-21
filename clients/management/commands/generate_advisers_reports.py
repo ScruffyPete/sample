@@ -1,9 +1,9 @@
 from collections import defaultdict
-
 from datetime import datetime, date, timedelta
+
 from django.core.management.base import BaseCommand
 from django.db.models.aggregates import Count
-from django.db.models.expressions import Case, Subquery, OuterRef
+from django.db.models.expressions import Subquery, OuterRef
 from django.db.models.fields import IntegerField
 from openpyxl.styles import Alignment
 from openpyxl.writer.excel import save_workbook
